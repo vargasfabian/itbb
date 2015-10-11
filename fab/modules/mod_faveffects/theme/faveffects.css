@@ -1,0 +1,367 @@
+/*
+
+Extension Name: Responsive FavEffects Module
+Author: FavThemes
+Author URI: http://www.favthemes.com
+Version: 1.4
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/copyleft/gpl.html
+
+*/
+
+div[id^="faveffects-icon"] i,
+div[id*=" faveffects-icon"] i {
+	float: left;
+  	width: 100%;
+  	padding: 50% 0;
+  	margin-top: -0.5em;
+  	text-align: center;
+}
+div[id^="faveffects-icon"],
+div[id*=" faveffects-icon"] {
+	cursor: pointer;
+}
+div[id^="faveffects-icon"]:after,
+div[id*=" faveffects-icon"]:after {
+	content: "";
+  	display: block;
+  	width: 100%;
+  	height: 0;
+  	padding-bottom: 100%;
+}
+p[id^="faveffects-title"],
+p[id*=" faveffects-title"] {
+	margin: 0 0 21px;
+  	text-align: center;
+}
+p[id^="faveffects-title"] a,
+p[id*=" faveffects-title"] a {
+	color: #444;
+	line-height: 1.3em;
+	text-decoration: none;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+div[id^="faveffects-box"].span2-4,
+div[id*=" faveffects-box"].span2-4 {
+	width: 17.790056%;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+
+	div[id^="faveffects-icon"] i,
+	div[id*=" faveffects-icon"] i {
+		font-size: 3em!important;
+	}
+
+	div[id^="faveffects-box"].span2,
+	div[id*=" faveffects-box"].span2,
+ 	div[id^="faveffects-box"].span2-4,
+	div[id*=" faveffects-box"].span2-4,
+ 	div[id^="faveffects-box"].span3,
+	div[id*=" faveffects-box"].span3,
+ 	div[id^="faveffects-box"].span4,
+	div[id*=" faveffects-box"].span4,
+	div[id^="faveffects-box"].span6,
+	div[id*=" faveffects-box"].span6  {
+	 	margin-left: 2.127659574468085%;
+	 	float:left;
+ 	}
+ 	div[id^="faveffects-box"].span2:first-child,
+	div[id*=" faveffects-box"].span2:first-child,
+ 	div[id^="faveffects-box"].span2-4:first-child,
+	div[id*=" faveffects-box"].span2-4:first-child,
+ 	div[id^="faveffects-box"].span3:first-child,
+	div[id*=" faveffects-box"].span3:first-child,
+ 	div[id^="faveffects-box"].span4:first-child,
+	div[id*=" faveffects-box"].span4:first-child,
+	div[id^="faveffects-box"].span6:first-child,
+	div[id*=" faveffects-box"].span6:first-child {
+ 		margin-left: 0;
+ 	}
+ 	div[id^="faveffects-box"].span2,
+	div[id*=" faveffects-box"].span2 {
+ 		width: 14.893617021276595%;
+ 	}
+ 	div[id^="faveffects-box"].span2-4,
+	div[id*=" faveffects-box"].span2-4 {
+ 		width: 18.2978723%;
+ 	}
+ 	div[id^="faveffects-box"].span3,
+	div[id*=" faveffects-box"].span3 {
+ 		width: 23.404255319148934%;
+ 	}
+ 	div[id^="faveffects-box"].span4,
+	div[id*=" faveffects-box"].span4 {
+	 	width: 31.9149%;
+ 	}
+ 	div[id^="faveffects-box"].span6,
+	div[id*=" faveffects-box"].span6 {
+	 	width: 48.93617021276595%;
+ 	}
+	p[id^="faveffects-title"],
+	p[id*=" faveffects-title"]  {
+		margin-top: 0;
+	}
+
+}
+
+@media handheld, only screen and (max-width: 480px) {
+
+	div[id^="faveffects-box"].span2,
+	div[id*=" faveffects-box"].span2,
+ 	div[id^="faveffects-box"].span2-4,
+	div[id*=" faveffects-box"].span2-4,
+ 	div[id^="faveffects-box"].span3,
+	div[id*=" faveffects-box"].span3,
+ 	div[id^="faveffects-box"].span4,
+	div[id*=" faveffects-box"].span4,
+	div[id^="faveffects-box"].span6,
+	div[id*=" faveffects-box"].span6 {
+ 		margin-left: 0;
+ 		width: 100%;
+ 	}
+	div[id^="faveffects-icon"],
+	div[id*=" faveffects-icon"] {
+		max-width: 50%;
+		margin: 0 auto;
+	}
+	p[id^="faveffects-title"],
+	p[id*=" faveffects-title"] {
+		float: left;
+		width: 100%;
+		margin-top: 0;
+		margin-bottom: 21px;
+		font-size: 150%;
+	}
+	div[id^="faveffects-icon"] i,
+	div[id*=" faveffects-icon"] i {
+		font-size: 5em!important;
+	}
+
+}
+
+@media handheld, only screen and (max-width: 320px) {
+
+	div[id^="faveffects-icon"] i,
+	div[id*=" faveffects-icon"] i {
+		font-size: 4em!important;
+	}
+
+}
+
+/* Effect 1 */
+.faveffects-effect1 {
+	-webkit-transition: 700ms;
+  	-o-transition: 700ms;
+  	transition: 700ms;
+}
+.faveffects-effect1:hover {
+  	-webkit-transform: rotate(-180deg) scale(0.9);
+  	-ms-transform: rotate(-180deg) scale(0.9);
+  	-o-transform: rotate(-180deg) scale(0.9);
+  	transform: rotate(-180deg) scale(0.9);
+  	background-color: #eee!important;
+  	border-color: #444!important;
+}
+.faveffects-effect1 i:hover {
+	color: #444!important;
+}
+
+/* Effect 2 */
+.faveffects-effect2 {
+	-webkit-transition: 1.5s;
+  	-o-transition: 1.5s;
+  	transition: 1.5s;
+}
+.faveffects-effect2:hover {
+	animation-name: effect2;
+	-webkit-animation-name: effect2;
+
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+	background-color: #eee!important;
+  	border-color: #444!important;
+}
+.faveffects-effect2 i:hover {
+	color: #444!important;
+}
+
+@-webkit-keyframes effect2 {
+	60% {
+		-webkit-transform: scale(1);
+	}
+	80% {
+		-webkit-transform: scale(0.7);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+}
+@-moz-keyframes effect2 {
+	60% {
+		-webkit-transform: scale(1);
+	}
+	80% {
+		-webkit-transform: scale(0.7);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+}
+@keyframes effect2 {
+	60% {
+		transform: scale(1);
+	}
+	80% {
+		transform: scale(0.7);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+/* Effect 3 */
+.faveffects-effect3 {
+	-webkit-transition: 1.5s;
+	-moz-transition: 1.5s;
+  	-o-transition: 1.5s;
+  	transition: 1.5s;
+}
+.faveffects-effect3:hover {
+	-webkit-transform: rotate(720deg) scale(1.3, 1.3);
+	-moz-transform: rotate(720deg) scale(1.3, 1.3);
+	-0-transform: rotate(720deg) scale(1.3, 1.3);
+	transition: all 2s ease-in-out 0s;
+  	background-color: #eee!important;
+  	border-color: #444!important;
+}
+.faveffects-effect3 i:hover {
+	color: #444!important;
+}
+
+/* Effect 4 */
+.faveffects-effect4 {
+	-webkit-transition: 1.5s;
+  	-o-transition: 1.5s;
+  	transition: 1.5s;
+}
+.faveffects-effect4:hover {
+  	-webkit-transform: rotateY(180deg);
+  	-moz-transform: rotateY(180deg);
+  	-o-transform: rotateY(180deg);
+  	transform: rotateY(180deg);
+  	-webkit-perspective: 800px;
+  	-moz-perspective: 800px;
+  	-o-perspective: 800px;
+  	perspective: 800px;
+  	-webkit-perspective-origin: 50% 100px;
+  	-moz-perspective-origin: 50% 100px;
+  	-o-perspective-origin: 50% 100px;
+  	perspective-origin: 50% 100px;
+  	-webkit-transition: all 2s ease-in-out 0s;
+  	-moz-transition: all 2s ease-in-out 0s;
+  	-o-transition: all 2s ease-in-out 0s;
+  	transition: all 2s ease-in-out 0s;
+  	background-color: #eee!important;
+  	border-color: #444!important;
+}
+.faveffects-effect4 i:hover {
+	color: #444!important;
+}
+
+/* Effect 5 */
+.faveffects-effect5 {
+	-webkit-transition: background 0.2s, color 0.2s;
+	-moz-transition: background 0.2s, color 0.2s;
+	transition: background 0.2s, color 0.2s;
+}
+.faveffects-effect5:hover {
+	background-color: #eee!important;
+  	border-color: #444!important;
+	-webkit-transition: all 1s ease-out;
+  	-moz-transition: all 1s ease-out;
+  	-o-transition: all 1s ease-out;
+  	transition: all 1s ease-out;
+	-webkit-animation: effect5 2s linear infinite;
+	-moz-animation: effect5 2s linear infinite;
+	animation: effect5 2s linear infinite;
+}
+.faveffects-effect5 i:hover {
+	color: #444!important;
+}
+
+@-webkit-keyframes effect5 {
+	from {
+		-webkit-transform: rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-moz-keyframes effect5 {
+	from {
+		-moz-transform: rotate(0deg)
+	}
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}
+@keyframes effect5 {
+	from {
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Effect 6 */
+.faveffects-effect6 {
+	-webkit-transition: 700ms;
+  	-o-transition: 700ms;
+  	transition: 700ms;
+  	-webkit-transform: translateY(0);
+  	-ms-transform: translateY(0);
+  	-o-transform: translateY(0);
+  	transform: translateY(0);
+}
+.faveffects-effect6:hover {
+	-webkit-transform: translateY(10%);
+  	-ms-transform: translateY(10%);
+  	-o-transform: translateY(10%);
+  	transform: translateY(10%);
+  	background-color: #eee!important;
+  	border-color: #444!important;
+}
+.faveffects-effect6 i:hover {
+	color: #444!important;
+}
+
+
+/* IE */
+
+.lt-ie8 div[id^="faveffects-icon"],
+.lt-ie8 div[id*=" faveffects-icon"] {
+  zoom:1;
+}
+.lt-ie8 div[id^="faveffects-icon"] i,
+.lt-ie8 div[id*=" faveffects-icon"] i {
+  overflow: hidden;
+  margin-top: 0;
+  line-height: 0;
+}
+.lt-ie8 p[id^="faveffects-title"],
+.lt-ie8 p[id*=" faveffects-title"] {
+  margin-top: 21px;
+}
+
+

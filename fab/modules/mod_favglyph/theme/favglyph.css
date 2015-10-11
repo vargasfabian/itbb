@@ -1,0 +1,235 @@
+/*
+
+Extension Name: Responsive FavGlyph Module
+Author: FavThemes
+Author URI: http://www.favthemes.com
+Version: 1.3
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/copyleft/gpl.html
+
+*/
+
+div[id^="favglyph-icon"] i,
+div[id*=" favglyph-icon"] i {
+	float: left;
+  	width: 100%;
+  	padding: 50% 0;
+  	line-height: 0;
+  	text-align: center;
+}
+div[id^="favglyph-icon"],
+div[id*=" favglyph-icon"] {
+	cursor: pointer;
+}
+div[id^="favglyph"] h2,
+div[id*=" favglyph"] h2 {
+	line-height: 1.2em;
+	font-weight: normal;
+}
+div[id^="favglyph"] h2 a:hover,
+div[id*=" favglyph"] h2 a:hover {
+	text-decoration: none;
+}
+div[id^="favglyph-icon"]:after,
+div[id*=" favglyph-icon"]:after {
+	content: "";
+  	display: block;
+  	width: 100%;
+  	height: 0;
+  	padding-bottom: 100%;
+}
+p[id^="favglyph-title"] a,
+p[id*=" favglyph-title"] a {
+	color: #444;
+	line-height: 1.3em;
+	text-decoration: none;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+/* Layout */
+
+div[class^="favglyph-icon-center"],
+div[class*=" favglyph-icon-center"],
+div[class^="favglyph-text-center"],
+div[class*=" favglyph-text-center"] {
+	float: none;
+}
+div.favglyph-icon-center div#favglyph-icon {
+	margin: 0 auto;
+}
+div[class^="favglyph-icon-left"],
+div[class*=" favglyph-icon-left"],
+div[class^="favglyph-text-right"],
+div[class*=" favglyph-text-right"] {
+	float: left;
+}
+div[class^="favglyph-icon-right"],
+div[class*=" favglyph-icon-right"],
+div[class^="favglyph-text-left"],
+div[class*=" favglyph-text-left"] {
+	float: right;
+}
+div[class^="favglyph-icon-left"],
+div[class*=" favglyph-icon-left"],
+div[class^="favglyph-icon-right"],
+div[class*=" favglyph-icon-right"] {
+	width: 30%;
+}
+div[class^="favglyph-text-left"],
+div[class*=" favglyph-text-left"],
+div[class^="favglyph-text-right"],
+div[class*=" favglyph-text-right"] {
+	width: 64%;
+}
+div[class^="favglyph-text-left"] h2,
+div[class*=" favglyph-text-left"] h2,
+div[class^="favglyph-text-left"] p,
+div[class*=" favglyph-text-left"] p,
+div[class^="favglyph-text-right"] h2,
+div[class*=" favglyph-text-right"] h2,
+div[class^="favglyph-text-right"] p,
+div[class*=" favglyph-text-right"] p {
+	text-align: left;
+}
+div.favglyph-text-center h2,
+div.favglyph-text-center p {
+  	text-align: center;
+}
+div[class^="favglyph-text-left"] h2,
+div[class*=" favglyph-text-left"] h2,
+div[class^="favglyph-text-right"] h2,
+div[class*=" favglyph-text-right"] h2{
+	margin-top: 0;
+}
+
+/* Mobile */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	div[id^="favglyph-box"],
+	div[id*=" favglyph-box"] {
+		margin-bottom: 21px;
+	}
+ 	div[id^="favglyph-box"].span3,
+	div[id*=" favglyph-box"].span3,
+ 	div[id^="favglyph-box"].span4,
+	div[id*=" favglyph-box"].span4,
+	div[id^="favglyph-box"].span6,
+	div[id*=" favglyph-box"].span6  {
+	 	margin-left: 2.127659574468085%;
+	 	float:left;
+ 	}
+ 	div[id^="favglyph-box"].span3:first-child,
+	div[id*=" favglyph-box"].span3:first-child,
+ 	div[id^="favglyph-box"].span4:first-child,
+	div[id*=" favglyph-box"].span4:first-child,
+	div[id^="favglyph-box"].span6:first-child,
+	div[id*=" favglyph-box"].span6:first-child {
+ 		margin-left: 0;
+ 	}
+ 	div[id^="favglyph-box"].span3,
+	div[id*=" favglyph-box"].span3 {
+ 		width: 48.93617021276595%;
+ 	}
+ 	#favglyph-box3.span3 {
+ 		margin-left: 0;
+ 		clear: both;
+ 	}
+ 	div[id^="favglyph-box"].span4,
+	div[id*=" favglyph-box"].span4 {
+	 	width: 31.9149%;
+ 	}
+ 	div[id^="favglyph-box"].span6,
+	div[id*=" favglyph-box"].span6 {
+	 	width: 48.93617021276595%;
+ 	}
+	p[id^="favglyph-title"],
+	p[id*=" favglyph-title"]  {
+		margin-top: 0;
+	}
+
+}
+
+@media handheld, only screen and (max-width: 480px) {
+
+	div[id^="favglyph-box"].span2,
+	div[id*=" favglyph-box"].span2,
+ 	div[id^="favglyph-box"].span2-4,
+	div[id*=" favglyph-box"].span2-4,
+ 	div[id^="favglyph-box"].span3,
+	div[id*=" favglyph-box"].span3,
+ 	div[id^="favglyph-box"].span4,
+	div[id*=" favglyph-box"].span4,
+	div[id^="favglyph-box"].span6,
+	div[id*=" favglyph-box"].span6 {
+ 		margin-left: 0;
+ 		width: 100%;
+ 	}
+	div[id^="favglyph-icon"],
+	div[id*=" favglyph-icon"] {
+		max-width: 50%;
+		margin: 0 auto;
+	}
+	h2[id^="favglyph-title"],
+	h2[id*=" favglyph-title"] {
+		float: left;
+		width: 100%;
+		margin-top: 0;
+		margin-bottom: 21px;
+		font-size: 150%;
+	}
+	div[class^="favglyph-icon-left"],
+	div[class*=" favglyph-icon-left"],
+	div[class^="favglyph-text-right"],
+	div[class*=" favglyph-text-right"],
+	div[class^="favglyph-icon-right"],
+	div[class*=" favglyph-icon-right"],
+	div[class^="favglyph-text-left"],
+	div[class*=" favglyph-text-left"] {
+		float: none;
+	}
+	div[class^="favglyph-icon-left"],
+	div[class*=" favglyph-icon-left"],
+	div[class^="favglyph-icon-right"],
+	div[class*=" favglyph-icon-right"],
+	div[class^="favglyph-text-left"],
+	div[class*=" favglyph-text-left"],
+	div[class^="favglyph-text-right"],
+	div[class*=" favglyph-text-right"] {
+		width: 100%;
+	}
+	div[class^="favglyph-text-left"] h2,
+	div[class*=" favglyph-text-left"] h2,
+	div[class^="favglyph-text-left"] p,
+	div[class*=" favglyph-text-left"] p,
+	div[class^="favglyph-text-right"] h2,
+	div[class*=" favglyph-text-right"] h2,
+	div[class^="favglyph-text-right"] p,
+	div[class*=" favglyph-text-right"] p {
+		text-align: center;
+	}
+	div[class^="favglyph-text-left"] h2,
+	div[class*=" favglyph-text-left"] h2,
+	div[class^="favglyph-text-right"] h2,
+	div[class*=" favglyph-text-right"] h2 {
+		margin-top: 21px!important;
+	}
+
+}
+
+/* IE */
+
+.lt-ie8 div[id^="favglyph-icon"],
+.lt-ie8 div[id*=" favglyph-icon"] {
+  zoom:1;
+}
+.lt-ie8 div[id^="favglyph-icon"] i,
+.lt-ie8 div[id*=" favglyph-icon"] i {
+  overflow: hidden;
+  margin-top: 0;
+  line-height: 0;
+}
+.lt-ie8 p[id^="favglyph-title"],
+.lt-ie8 p[id*=" favglyph-title"] {
+  margin-top: 21px;
+}

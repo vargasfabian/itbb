@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.0"
+	client="site"
+	method="upgrade">
+	<name>FavEffects</name>
+	<author>FavThemes</author>
+	<version>1.4</version>
+	<creationDate>2013</creationDate>
+	<authorUrl>http://www.favthemes.com</authorUrl>
+	<authoremail>hello@favthemes.com</authoremail>
+	<copyright>Copyright (C) FavThemes. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<description>
+<![CDATA[
+<p>Responsive FavEffects Joomla!3 Module</p>
+<link rel="stylesheet" href="../modules/mod_faveffects/theme/admin.css" type="text/css" />
+<script src="../modules/mod_faveffects/theme/jscolor/jscolor.js" type="text/javascript"></script>
+]]></description>
+
+	<files>
+		<filename module="mod_faveffects">mod_faveffects.php</filename>
+		<filename>mod_faveffects.xml</filename>
+		<filename>index.html</filename>
+		<filename>License.txt</filename>
+		<folder>theme</folder>
+	</files>
+
+	<help key="FavEffects" />
+
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+
+					<field
+						name="showIcon1"
+						type="radio"
+						default="1"
+						class="btn-group"
+						label="Show Icon 1"
+						description="Choose if this icon and its title should be displayed or not.">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+					</field>
+
+					<field
+						name="effectIcon1"
+						type="list"
+						default="effect1"
+						class="btn-group"
+						label="Icon 1 Effect"
+						description="Choose a CSS3 effect for the icon.">
+							<option value="effect1">Effect1</option>
+							<option value="effect2">Effect2</option>
+							<option value="effect3">Effect3</option>
+							<option value="effect4">Effect4</option>
+							<option value="effect5">Effect5</option>
+							<option value="effect6">Effect6</option>
+					</field>
+
+					<field
+						name="iconLink1"
+						type="text"
+						default="http://favthemes.com/"
+						label="Icon 1 Link"
+						description="Insert the link for this icon. Note that the link must include http:// (for example: http://favthemes.com/, not favthemes.com)." />
+
+					<field
+						name="iconLinkTarget1"
+						type="radio"
+						default="blank"
+						class="btn-group"
+						label="Icon 1 Target"
+						description="Select the target of the URL">
+							<option	value="self">self</option>
+							<option	value="blank">blank</option>
+							<option	value="parent">parent</option>
+							<option	value="top">top</option>
+					</field>
+
+					<field
+						name="bgColorIcon1"
+						class="color {required:false}"
+						type="text"
+						default="8870B5"
+						label="Icon 1 Background Color"
+						description="The color for the background of the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="borderWidthIcon1"
+						type="text"
+						default="3px"
+						label="Icon 1 Border Width"
+						description="Choose the border width for the background of the icon. Please insert the number using pixels (for example: 14px, not 14)." />
+
+					<field
+						name="borderTypeIcon1"
+						type="radio"
+						default="solid"
+						class="btn-group"
+						label="Icon 1 Border Type"
+						description="Choose the border type of the background of the icon.">
+							<option value="solid">Solid</option>
+							<option value="dashed">Dashed</option>
+							<option value="dotted">Dotted</option>
+					</field>
+
+					<field
+						name="borderColorIcon1"
+						class="color {required:false}"
+						type="text"
+						default="B7A8D2"
+						label="Icon 1 Border Color"
+						description="The color for the border of the background of the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="borderRadiusIcon1"
+						type="text"
+						default="50%"
+						label="Icon 1 Border Radius"
+						description="Choose the border-radius for the background of the icon. Note that this option does not work in IE7-8 due to lack of border-radius support. Please insert the number using pixels (for example: 14px, not 14)." />
+
+					<field
+						name="nameIcon1"
+						type="text"
+						default="fa-magic"
+						label="Icon 1 Name"
+						description="Insert the Font Awesome icon name. For example: fa-camera or fa-arrow." />
+
+					<field
+						name="colorIcon1"
+						class="color {required:false}"
+						type="text"
+						default="FFFFFF"
+						label="Icon 1 Color"
+						description="The color for the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="fontSizeIcon1"
+						type="text"
+						default="3.3em"
+						label="Icon 1 Font Size"
+						description="Set the font size for the icon. Please insert the number using pixels or em (for example: 14px, not 14)." />
+
+					<field
+						name="titleText1"
+						type="textarea"
+						rows="2"
+						cols="40"
+						default="Icon1 Title"
+						label="Icon 1 Title"
+						description="Insert text for title of the icon" />
+
+					<field
+						name="titleColor1"
+						class="color {required:false}"
+						type="text"
+						default="444444"
+						label="Title Color"
+						description="The color for the title of the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="titleGoogleFont1"
+						class=""
+						type="text"
+						default="Open Sans"
+						label="Title Google Web Font"
+						description="Copy the Google Web Font name here, for example Open Sans or Open Sans." />
+
+					<field
+						name="titleFontSize1"
+						type="text"
+						default="16px"
+						label="Title Font Size"
+						description="Set the font size for the title of the icon. Please insert the number using pixels or em (for example: 14px, not 14)." />
+
+				<field type="spacer" hr="true" />
+
+					<field
+						name="showIcon2"
+						type="radio"
+						default="1"
+						class="btn-group"
+						label="Show Icon 2"
+						description="Choose if this icon and its title should be displayed or not.">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+					</field>
+
+					<field
+						name="effectIcon2"
+						type="list"
+						default="effect2"
+						class="btn-group"
+						label="Icon 2 Effect"
+						description="Choose a CSS3 effect for the icon.">
+							<option value="effect1">Effect1</option>
+							<option value="effect2">Effect2</option>
+							<option value="effect3">Effect3</option>
+							<option value="effect4">Effect4</option>
+							<option value="effect5">Effect5</option>
+							<option value="effect6">Effect6</option>
+					</field>
+
+					<field
+						name="iconLink2"
+						type="text"
+						default="http://favthemes.com/"
+						label="Icon 2 Link"
+						description="Insert the link for this icon. Note that the link must include http:// (for example: http://favthemes.com/, not favthemes.com)." />
+
+					<field
+						name="iconLinkTarget2"
+						type="radio"
+						default="blank"
+						class="btn-group"
+						label="Icon 2 Target"
+						description="Select the target of the URL">
+							<option	value="self">self</option>
+							<option	value="blank">blank</option>
+							<option	value="parent">parent</option>
+							<option	value="top">top</option>
+					</field>
+
+					<field
+						name="bgColorIcon2"
+						class="color {required:false}"
+						type="text"
+						default="E5404B"
+						label="Icon 2 Background Color"
+						description="The color for the background of the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="borderWidthIcon2"
+						type="text"
+						default="3px"
+						label="Icon 2 Border Width"
+						description="Choose the border width for the background of the icon. Please insert the number using pixels (for example: 14px, not 14)." />
+
+					<field
+						name="borderTypeIcon2"
+						type="radio"
+						default="solid"
+						class="btn-group"
+						label="Icon 2 Border Type"
+						description="Choose the border type of the background of the icon.">
+							<option value="solid">Solid</option>
+							<option value="dashed">Dashed</option>
+							<option value="dotted">Dotted</option>
+					</field>
+
+					<field
+						name="borderColorIcon2"
+						class="color {required:false}"
+						type="text"
+						default="F19AA0"
+						label="Icon 2 Border Color"
+						description="The color for the border of the background of the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="borderRadiusIcon2"
+						type="text"
+						default="50%"
+						label="Icon 2 Border Radius"
+						description="Choose the border-radius for the background of the icon. Note that this option does not work in IE7-8 due to lack of border-radius support. Please insert the number using pixels (for example: 14px, not 14)." />
+
+					<field
+						name="nameIcon2"
+						type="text"
+						default="fa-heart"
+						label="Icon 2 Name"
+						description="Insert the Font Awesome icon name. For example: fa-camera or fa-arrow." />
+
+					<field
+						name="colorIcon2"
+						class="color {required:false}"
+						type="text"
+						default="FFFFFF"
+						label="Icon 2 Color"
+						description="The color for the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="fontSizeIcon2"
+						type="text"
+						default="3.3em"
+						label="Icon 2 Font Size"
+						description="Set the font size for the icon. Please insert the number using pixels or em (for example: 14px, not 14)." />
+
+					<field
+						name="titleText2"
+						type="textarea"
+						rows="2"
+						cols="40"
+						default="Icon2 Title"
+						label="Icon 2 Title"
+						description="Insert text for title of the icon" />
+
+					<field
+						name="titleColor2"
+						class="color {required:false}"
+						type="text"
+						default="444444"
+						label="Title Color"
+						description="The color for the title of the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="titleGoogleFont2"
+						class=""
+						type="text"
+						default="Open Sans"
+						label="Title Google Web Font"
+						description="Copy the Google Web Font name here, for example Open Sans or Open Sans." />
+
+					<field
+						name="titleFontSize2"
+						type="text"
+						default="16px"
+						label="Title Font Size"
+						description="Set the font size for the title of the icon. Please insert the number using pixels or em (for example: 14px, not 14)." />
+
+				<field type="spacer" hr="true" />
+
+					<field
+						name="showIcon3"
+						type="radio"
+						default="1"
+						class="btn-group"
+						label="Show Icon 3"
+						description="Choose if this icon and its title should be displayed or not.">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+					</field>
+
+					<field
+						name="effectIcon3"
+						type="list"
+						default="effect3"
+						class="btn-group"
+						label="Icon 3 Effect"
+						description="Choose a CSS3 effect for the icon.">
+							<option value="effect1">Effect1</option>
+							<option value="effect2">Effect2</option>
+							<option value="effect3">Effect3</option>
+							<option value="effect4">Effect4</option>
+							<option value="effect5">Effect5</option>
+							<option value="effect6">Effect6</option>
+					</field>
+
+					<field
+						name="iconLink3"
+						type="text"
+						default="http://favthemes.com/"
+						label="Icon 3 Link"
+						description="Insert the link for this icon. Note that the link must include http:// (for example: http://favthemes.com/, not favthemes.com)." />
+
+					<field
+						name="iconLinkTarget3"
+						type="radio"
+						default="blank"
+						class="btn-group"
+						label="Icon 3 Target"
+						description="Select the target of the URL">
+							<option	value="self">self</option>
+							<option	value="blank">blank</option>
+							<option	value="parent">parent</option>
+							<option	value="top">top</option>
+					</field>
+
+					<field
+						name="bgColorIcon3"
+						class="color {required:false}"
+						type="text"
+						default="0099E1"
+						label="Icon 3 Background Color"
+						description="The color for the background of the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="borderWidthIcon3"
+						type="text"
+						default="3px"
+						label="Icon 3 Border Width"
+						description="Choose the border width for the background of the icon. Please insert the number using pixels (for example: 14px, not 14)." />
+
+					<field
+						name="borderTypeIcon3"
+						type="radio"
+						default="solid"
+						class="btn-group"
+						label="Icon 3 Border Type"
+						description="Choose the border type of the background of the icon.">
+							<option value="solid">Solid</option>
+							<option value="dashed">Dashed</option>
+							<option value="dotted">Dotted</option>
+					</field>
+
+					<field
+						name="borderColorIcon3"
+						class="color {required:false}"
+						type="text"
+						default="59CAFF"
+						label="Icon 3 Border Color"
+						description="The color for the border of the background of the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="borderRadiusIcon3"
+						type="text"
+						default="50%"
+						label="Icon 3 Border Radius"
+						description="Choose the border-radius for the background of the icon. Note that this option does not work in IE7-8 due to lack of border-radius support. Please insert the number using pixels (for example: 14px, not 14)." />
+
+					<field
+						name="nameIcon3"
+						type="text"
+						default="fa-life-ring"
+						label="Icon 3 Name"
+						description="Insert the Font Awesome icon name. For example: fa-camera or fa-arrow." />
+
+					<field
+						name="colorIcon3"
+						class="color {required:false}"
+						type="text"
+						default="FFFFFF"
+						label="Icon 3 Color"
+						description="The color for the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="fontSizeIcon3"
+						type="text"
+						default="3.3em"
+						label="Icon 3 Font Size"
+						description="Set the font size for the icon. Please insert the number using pixels or em (for example: 14px, not 14)." />
+
+					<field
+						name="titleText3"
+						type="textarea"
+						rows="2"
+						cols="40"
+						default="Icon3 Title"
+						label="Icon 3 Title"
+						description="Insert text for title of the icon" />
+
+					<field
+						name="titleColor3"
+						class="color {required:false}"
+						type="text"
+						default="444444"
+						label="Title Color"
+						description="The color for the title of the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="titleGoogleFont3"
+						class=""
+						type="text"
+						default="Open Sans"
+						label="Title Google Web Font"
+						description="Copy the Google Web Font name here, for example Open Sans or Open Sans." />
+
+					<field
+						name="titleFontSize3"
+						type="text"
+						default="16px"
+						label="Title Font Size"
+						description="Set the font size for the title of the icon. Please insert the number using pixels or em (for example: 14px, not 14)." />
+
+				<field type="spacer" hr="true" />
+
+					<field
+						name="showIcon4"
+						type="radio"
+						default="1"
+						class="btn-group"
+						label="Show Icon 4"
+						description="Choose if this icon and its title should be displayed or not.">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+					</field>
+
+					<field
+						name="effectIcon4"
+						type="list"
+						default="effect4"
+						class="btn-group"
+						label="Icon 4 Effect"
+						description="Choose a CSS3 effect for the icon.">
+							<option value="effect1">Effect1</option>
+							<option value="effect2">Effect2</option>
+							<option value="effect3">Effect3</option>
+							<option value="effect4">Effect4</option>
+							<option value="effect5">Effect5</option>
+							<option value="effect6">Effect6</option>
+					</field>
+
+					<field
+						name="iconLink4"
+						type="text"
+						default="http://favthemes.com/"
+						label="Icon 4 Link"
+						description="Insert the link for this icon. Note that the link must include http:// (for example: http://favthemes.com/, not favthemes.com)." />
+
+					<field
+						name="iconLinkTarget4"
+						type="radio"
+						default="blank"
+						class="btn-group"
+						label="Icon 4 Target"
+						description="Select the target of the URL">
+							<option	value="self">self</option>
+							<option	value="blank">blank</option>
+							<option	value="parent">parent</option>
+							<option	value="top">top</option>
+					</field>
+
+					<field
+						name="bgColorIcon4"
+						class="color {required:false}"
+						type="text"
+						default="00BA97"
+						label="Icon 4 Background Color"
+						description="The color for the background of the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="borderWidthIcon4"
+						type="text"
+						default="3px"
+						label="Icon 4 Border Width"
+						description="Choose the border width for the background of the icon. Please insert the number using pixels (for example: 14px, not 14)." />
+
+					<field
+						name="borderTypeIcon4"
+						type="radio"
+						default="solid"
+						class="btn-group"
+						label="Icon 4 Border Type"
+						description="Choose the border type of the background of the icon.">
+							<option value="solid">Solid</option>
+							<option value="dashed">Dashed</option>
+							<option value="dotted">Dotted</option>
+					</field>
+
+					<field
+						name="borderColorIcon4"
+						class="color {required:false}"
+						type="text"
+						default="00DCB3"
+						label="Icon 4 Border Color"
+						description="The color for the border of the background of the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="borderRadiusIcon4"
+						type="text"
+						default="50%"
+						label="Icon 4 Border Radius"
+						description="Choose the border-radius for the background of the icon. Note that this option does not work in IE7-8 due to lack of border-radius support. Please insert the number using pixels (for example: 14px, not 14)." />
+
+					<field
+						name="nameIcon4"
+						type="text"
+						default="fa-tree"
+						label="Icon 4 Name"
+						description="Insert the Font Awesome icon name. For example: fa-camera or fa-arrow." />
+
+					<field
+						name="colorIcon4"
+						class="color {required:false}"
+						type="text"
+						default="FFFFFF"
+						label="Icon 4 Color"
+						description="The color for the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="fontSizeIcon4"
+						type="text"
+						default="3.3em"
+						label="Icon 4 Font Size"
+						description="Set the font size for the icon. Please insert the number using pixels or em (for example: 14px, not 14)." />
+
+					<field
+						name="titleText4"
+						type="textarea"
+						rows="2"
+						cols="40"
+						default="Icon4 Title"
+						label="Icon 4 Title"
+						description="Insert text for title of the icon" />
+
+					<field
+						name="titleColor4"
+						class="color {required:false}"
+						type="text"
+						default="444444"
+						label="Title Color"
+						description="The color for the title of the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="titleGoogleFont4"
+						class=""
+						type="text"
+						default="Open Sans"
+						label="Title Google Web Font"
+						description="Copy the Google Web Font name here, for example Open Sans or Open Sans." />
+
+					<field
+						name="titleFontSize4"
+						type="text"
+						default="16px"
+						label="Title Font Size"
+						description="Set the font size for the title of the icon. Please insert the number using pixels or em (for example: 14px, not 14)." />
+
+				<field type="spacer" hr="true" />
+
+					<field
+						name="showIcon5"
+						type="radio"
+						default="1"
+						class="btn-group"
+						label="Show Icon 5"
+						description="Choose if this icon and its title should be displayed or not.">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+					</field>
+
+					<field
+						name="effectIcon5"
+						type="list"
+						default="effect5"
+						class="btn-group"
+						label="Icon 5 Effect"
+						description="Choose a CSS3 effect for the icon.">
+							<option value="effect1">Effect1</option>
+							<option value="effect2">Effect2</option>
+							<option value="effect3">Effect3</option>
+							<option value="effect4">Effect4</option>
+							<option value="effect5">Effect5</option>
+							<option value="effect6">Effect6</option>
+					</field>
+
+					<field
+						name="iconLink5"
+						type="text"
+						default="http://favthemes.com/"
+						label="Icon 5 Link"
+						description="Insert the link for this icon. Note that the link must include http:// (for example: http://favthemes.com/, not favthemes.com)." />
+
+					<field
+						name="iconLinkTarget5"
+						type="radio"
+						default="blank"
+						class="btn-group"
+						label="Icon 5 Target"
+						description="Select the target of the URL">
+							<option	value="self">self</option>
+							<option	value="blank">blank</option>
+							<option	value="parent">parent</option>
+							<option	value="top">top</option>
+					</field>
+
+					<field
+						name="bgColorIcon5"
+						class="color {required:false}"
+						type="text"
+						default="E97945"
+						label="Icon 5 Background Color"
+						description="The color for the background of the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="borderWidthIcon5"
+						type="text"
+						default="3px"
+						label="Icon 5 Border Width"
+						description="Choose the border width for the background of the icon. Please insert the number using pixels (for example: 14px, not 14)." />
+
+					<field
+						name="borderTypeIcon5"
+						type="radio"
+						default="solid"
+						class="btn-group"
+						label="Icon 5 Border Type"
+						description="Choose the border type of the background of the icon.">
+							<option value="solid">Solid</option>
+							<option value="dashed">Dashed</option>
+							<option value="dotted">Dotted</option>
+					</field>
+
+					<field
+						name="borderColorIcon5"
+						class="color {required:false}"
+						type="text"
+						default="F2B091"
+						label="Icon 5 Border Color"
+						description="The color for the border of the background of the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="borderRadiusIcon5"
+						type="text"
+						default="50%"
+						label="Icon 5 Border Radius"
+						description="Choose the border-radius for the background of the icon. Note that this option does not work in IE7-8 due to lack of border-radius support. Please insert the number using pixels (for example: 14px, not 14)." />
+
+					<field
+						name="nameIcon5"
+						type="text"
+						default="fa-spinner"
+						label="Icon 5 Name"
+						description="Insert the Font Awesome icon name. For example: fa-camera or fa-arrow." />
+
+					<field
+						name="colorIcon5"
+						class="color {required:false}"
+						type="text"
+						default="FFFFFF"
+						label="Icon 5 Color"
+						description="The color for the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="fontSizeIcon5"
+						type="text"
+						default="3.3em"
+						label="Icon 5 Font Size"
+						description="Set the font size for the icon. Please insert the number using pixels or em (for example: 14px, not 14)." />
+
+					<field
+						name="titleText5"
+						type="textarea"
+						rows="2"
+						cols="40"
+						default="Icon5 Title"
+						label="Icon 5 Title"
+						description="Insert text for title of the icon" />
+
+					<field
+						name="titleColor5"
+						class="color {required:false}"
+						type="text"
+						default="444444"
+						label="Title Color"
+						description="The color for the title of the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="titleGoogleFont5"
+						class=""
+						type="text"
+						default="Open Sans"
+						label="Title Google Web Font"
+						description="Copy the Google Web Font name here, for example Open Sans or Open Sans." />
+
+					<field
+						name="titleFontSize5"
+						type="text"
+						default="16px"
+						label="Title Font Size"
+						description="Set the font size for the title of the icon. Please insert the number using pixels or em (for example: 14px, not 14)." />
+
+				<field type="spacer" hr="true" />
+
+					<field
+						name="showIcon6"
+						type="radio"
+						default="1"
+						class="btn-group"
+						label="Show Icon 6"
+						description="Choose if this icon and its title should be displayed or not.">
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+					</field>
+
+					<field
+						name="effectIcon6"
+						type="list"
+						default="effect6"
+						class="btn-group"
+						label="Icon 6 Effect"
+						description="Choose a CSS3 effect for the icon.">
+							<option value="effect1">Effect1</option>
+							<option value="effect2">Effect2</option>
+							<option value="effect3">Effect3</option>
+							<option value="effect4">Effect4</option>
+							<option value="effect5">Effect5</option>
+							<option value="effect6">Effect6</option>
+					</field>
+
+					<field
+						name="iconLink6"
+						type="text"
+						default="http://favthemes.com/"
+						label="Icon 6 Link"
+						description="Insert the link for this icon. Note that the link must include http:// (for example: http://favthemes.com/, not favthemes.com)." />
+
+					<field
+						name="iconLinkTarget6"
+						type="radio"
+						default="blank"
+						class="btn-group"
+						label="Icon 6 Target"
+						description="Select the target of the URL">
+							<option	value="self">self</option>
+							<option	value="blank">blank</option>
+							<option	value="parent">parent</option>
+							<option	value="top">top</option>
+					</field>
+
+					<field
+						name="bgColorIcon6"
+						class="color {required:false}"
+						type="text"
+						default="13C8DD"
+						label="Icon 6 Background Color"
+						description="The color for the background of the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="borderWidthIcon6"
+						type="text"
+						default="3px"
+						label="Icon 6 Border Width"
+						description="Choose the border width for the background of the icon. Please insert the number using pixels (for example: 14px, not 14)." />
+
+					<field
+						name="borderTypeIcon6"
+						type="radio"
+						default="solid"
+						class="btn-group"
+						label="Icon 6 Border Type"
+						description="Choose the border type of the background of the icon.">
+							<option value="solid">Solid</option>
+							<option value="dashed">Dashed</option>
+							<option value="dotted">Dotted</option>
+					</field>
+
+					<field
+						name="borderColorIcon6"
+						class="color {required:false}"
+						type="text"
+						default="55E0F0"
+						label="Icon 6 Border Color"
+						description="The color for the border of the background of the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="borderRadiusIcon6"
+						type="text"
+						default="50%"
+						label="Icon 6 Border Radius"
+						description="Choose the border-radius for the background of the icon. Note that this option does not work in IE7-8 due to lack of border-radius support. Please insert the number using pixels (for example: 14px, not 14)." />
+
+					<field
+						name="nameIcon6"
+						type="text"
+						default="fa-paper-plane-o"
+						label="Icon 6 Name"
+						description="Insert the Font Awesome icon name. For example: fa-camera or fa-arrow." />
+
+					<field
+						name="colorIcon6"
+						class="color {required:false}"
+						type="text"
+						default="FFFFFF"
+						label="Icon 6 Color"
+						description="The color for the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="fontSizeIcon6"
+						type="text"
+						default="3.3em"
+						label="Icon 6 Font Size"
+						description="Set the font size for the icon. Please insert the number using pixels or em (for example: 14px, not 14)." />
+
+					<field
+						name="titleText6"
+						type="textarea"
+						rows="2"
+						cols="40"
+						default="Icon6 Title"
+						label="Icon 6 Title"
+						description="Insert text for title of the icon" />
+
+					<field
+						name="titleColor6"
+						class="color {required:false}"
+						type="text"
+						default="444444"
+						label="Title Color"
+						description="The color for the title of the icon. A blank field reverts the setting to the default value." />
+
+					<field
+						name="titleGoogleFont6"
+						class=""
+						type="text"
+						default="Open Sans"
+						label="Title Google Web Font"
+						description="Copy the Google Web Font name here, for example Open Sans or Open Sans." />
+
+					<field
+						name="titleFontSize6"
+						type="text"
+						default="16px"
+						label="Title Font Size"
+						description="Set the font size for the title of the icon. Please insert the number using pixels or em (for example: 14px, not 14)." />
+
+
+			</fieldset>
+
+			<fieldset name="advanced">
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>

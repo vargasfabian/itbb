@@ -1,0 +1,69 @@
+/*
+
+Extension Name: Responsive FavSocial Module
+Author: FavThemes
+Author URI: http://www.favthemes.com
+Version: 1.4
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/copyleft/gpl.html
+
+*/
+
+div[id^="favsocial"] a,
+div[id*=" favsocial"] a {
+  float: left;
+}
+div[id^="favsocial"] a:hover,
+div[id*=" favsocial"] a:hover,
+div[id^="favsocial"] a:active,
+div[id*=" favsocial"] a:active,
+div[id^="favsocial"] a:focus,
+div[id*=" favsocial"] a:focus {
+  opacity: 0.8;
+  background-color: transparent;
+}
+li[id^="favsocial-icon"],
+li[id*=" favsocial-icon"] {
+  list-style: none;
+  float: left;
+  margin: 0 5px;
+}
+li[id^="favsocial-icon"] i,
+li[id*=" favsocial-icon"] i {
+  float: left;
+  width: 100%;
+  padding: 50% 0;
+  line-height: 0;
+  text-align: center;
+}
+li[id^="favsocial-icon"]:after,
+li[id*=" favsocial-icon"]:after {
+	content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+}
+ul#favsocial-list {
+  margin: 0;
+  overflow: hidden;
+}
+
+/* IE */
+.lt-ie8 div[id^="favsocial"] i,
+.lt-ie8 div[id*=" favsocial"] i {
+  padding: 0.5em 0;
+  margin: 0;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+
+	#favsocial {
+		float: none!important;
+	}
+	ul#favsocial-list {
+		margin: 0;
+    float: none!important;
+	}
+
+}
